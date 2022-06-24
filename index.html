@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteSpeech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Header>
+        <div class="logo">
+            <img src="./asset/logo-ns.svg" alt="NoteSpeech-logo">
+        </div>
+    </Header>
+    <main>
+        <div class="hero">
+            <p class="hero-text">Create Your Note With Voice</p>
+            <img src="./asset/mic-red.svg" alt="">
+        </div>
+        <section>
+            <form action="">
+                <div class="box">
+                    <input type="text" placeholder="Judul Catatan..." id="title">
+                    <div class="microphone">
+                        <img src="./asset/mic-red.svg" alt="">
+                    </div>
+                    <div class="box-btn">
+                       <button type="submit" class="btn-save">Simpan</button>
+                       <button type="submit" class="btn-reset">Reset</button> 
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="board">
+
+                    </div>
+                </div>
+                
+            </form>
+        </section>
+        <section>
+            <div class="path">
+                <h5>List Note </h5>
+                <img src="./asset/book-note.svg" alt="">
+            </div>
+            
+            <div class="content">
+                <div class="card">
+                    <div class="note-title">
+                        Judul NoteSpeech
+                    </div>
+                    <div class="note-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis accusamus harum placeat deserunt officia accusantium quod odit, aperiam nihil tempora pariatur expedita amet, suscipit, aliquam cum. Magni molestiae perspiciatis tenetur.
+                    </div>
+                    <button class="btn-remove">
+                        Remove
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
