@@ -60,11 +60,11 @@
 		        // get action element reference
 		        var action = document.getElementById("action");
                 // new speech recognition object
-       
+				
 
                 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
                 var recognition = new SpeechRecognition();
-            
+				console.log(SpeechRecognition);
                 // This runs when the speech recognition service starts
                 recognition.onstart = function() {
                     

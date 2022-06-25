@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src='./responsivevoice.js'></script>
 </head>
 <body>
     <Header>
@@ -19,23 +20,23 @@
     <main>
         <div class="hero">
             <p class="hero-text">Create Your Note With Voice</p>
-            <img src="./asset/mic-red.svg" alt="">
+            <img src="./asset/mic-rg.svg" alt="">
         </div>
         <section>
-            <form action="">
+            <form action="" name="note">
                 <div class="box">
-                    <input type="text" placeholder="Judul Catatan..." id="title">
-                    <div class="microphone">
-                        <img src="./asset/mic-red.svg" alt="">
+                    <input type="text" placeholder="Judul Catatan..." id="title" required onchange="handleInput()" name="note">
+                    <div class="microphone" id="mic" onclick="runSpeechRecognition()" id="action">
+                        <img src="./asset/mic-red.svg" alt="" >
                     </div>
                     <div class="box-btn">
-                       <button type="submit" class="btn-save">Simpan</button>
-                       <button type="submit" class="btn-reset">Reset</button> 
+                       <button type="button" class="btn-save" onclick="handleSave()">Simpan</button>
+                       <button type="reset" class="btn-reset" onclick="handleReset()" name="note">Reset</button> 
                     </div>
                     
                 </div>
                 <div class="box">
-                    <div class="board">
+                    <div class="board" id="output">
 
                     </div>
                 </div>
@@ -48,20 +49,12 @@
                 <img src="./asset/book-note.svg" alt="">
             </div>
             
-            <div class="content">
-                <div class="card">
-                    <div class="note-title">
-                        Judul NoteSpeech
-                    </div>
-                    <div class="note-body">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis accusamus harum placeat deserunt officia accusantium quod odit, aperiam nihil tempora pariatur expedita amet, suscipit, aliquam cum. Magni molestiae perspiciatis tenetur.
-                    </div>
-                    <button class="btn-remove">
-                        Remove
-                    </button>
-                </div>
+            <div class="content" id="container">
+              
             </div>
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
+
 </html>

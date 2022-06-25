@@ -141,6 +141,15 @@ form .box .board{
     height: 80%;
     border: solid 3px var(--secondary);
     border-radius: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: var(--DMsans);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--secondary);
 }
 section .path{
     font-family: var(--DMmono);
@@ -155,4 +164,78 @@ section .path{
 }
 section .path img{
     margin-left: 10px;
+}
+.content{
+    width: 95%;
+    min-height: 100vh;
+    max-height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.content .card{
+    width: 331px;
+    height: 472px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin-top: 30px;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: -3px 3px 6px 1px rgba(20, 26, 170, 0.51);
+}
+.content .card .note-title{
+    font-family: var(--DMmono);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #141AAA;
+}
+.content .card .note-date{
+    font-family: var(--DMmono);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #bfbfbf;
+}
+.content .card .note-body{
+    width: 272px;
+    height: 251px;
+    border-radius: 20px;
+    border: solid 3px #00C213;
+    background: #F7F7F7;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: var(--DMmono);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 20px;
+}
+.content .card .btn-remove{
+    width: 270px;
+    height: 48px;
+    border: none;
+    font-family: var(--DMmono);
+    color: #FF1515;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #F7F7F7;
+}
+.content .card .btn-remove:hover{
+    background: #cdcdff;
 }
